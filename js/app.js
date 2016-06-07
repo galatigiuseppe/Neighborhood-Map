@@ -45,7 +45,7 @@ var map, infowindow, marker;
 //This is in reference to the onerror call in the Google Maps API script. Thanks to whomever graded my code for the tip!
 function googleError() {
     alert("Google Maps has failed to load at this time.");
-};
+}
 
 //I moved the ko.applyBindings here to ensure that my viewModel will be called only after my map has been instantiated. 
 function initMap() {
@@ -134,12 +134,12 @@ var viewModel = function() {
     //Create a listClick function to bind the text of the location name to its marker.
     this.listClick = function(data) {
         google.maps.event.trigger(data.marker, 'click');
-        console.log(data);
+        
     };
 
 
 this.resetMarkers = function() {
-        for (var i = 0; i < that.searchInfo().length; i++) {
+        for (var i = 0, len = that.searchInfo().length; i < len; i++) {
             that.searchInfo()[i].marker.setVisible(true);
         }
     };
