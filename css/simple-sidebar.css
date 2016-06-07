@@ -40,7 +40,7 @@
 #page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px;
+  
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -116,7 +116,7 @@
     }
 
     #page-content-wrapper {
-        padding: 20px;
+        padding: 0px;
         position: relative;
     }
 
@@ -135,12 +135,12 @@
 }
 #menu-toggle{
     position: relative;
-    top: -850px;
+  
 }
 
 .btn{
     font-size: 21px;
-    color: black;
+    color: #005C95;
 }
 .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
     font-size: 14px;
@@ -169,3 +169,13 @@
     right: -15px;
     top: 10px;
 }
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #080808;
+}
+
+@media (min-width: 350px){
+.navbar  {
+    border-radius: 0px;
+}}
